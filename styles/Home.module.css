@@ -33,7 +33,6 @@
   text-align: center;
 }
 
-
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
@@ -88,4 +87,14 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mainnav {
+  text-align: center;
+  padding: 50px;
+  flex-direction: row;
+  color: pink;
+}
+.hometext {
+  text-align: center;
 }

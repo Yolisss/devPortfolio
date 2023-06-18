@@ -92,4 +92,9 @@
 .mainnav {
   text-align: center;
   padding: 50px;
+  flex-direction: row;
+  color: pink;
+}
+.hometext {
+  text-align: center;
 }

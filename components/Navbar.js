@@ -7,18 +7,18 @@ const Navbar = () => {
     <div>
       <nav>
         <ul className={styles.mainnav}>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-          <Link href="/about">
-            <li>About</li>
-          </Link>
-          <Link href="/blog">
-            <li>Blog</li>
-          </Link>
-          <Link href="/project">
-            <li>Project</li>
-          </Link>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link href="/project">Project</Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -90,11 +90,18 @@
 }
 
 .mainnav {
-  text-align: center;
+  justify-content: center;
   padding: 50px;
+  display: flex;
   flex-direction: row;
   color: rgb(217, 194, 219);
 }
+
+.mainnav li {
+  /* 0 represents top and bottom; second rep left and righ */
+  margin: 0 50px;
+}
+
 .hometext {
   text-align: center;
 }

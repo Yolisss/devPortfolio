@@ -93,8 +93,19 @@
   text-align: center;
   padding: 50px;
   flex-direction: row;
-  color: pink;
+  color: rgb(217, 194, 219);
 }
 .hometext {
   text-align: center;
+}
+
+.socialicon {
+  text-align: center;
+  padding: 50px;
+}
+.socialcomponent {
+  padding: 100px;
+  color: white;
+  background-color: rgb(236, 216, 151);
+  /* background-color: rgb(217, 194, 219); */
 }

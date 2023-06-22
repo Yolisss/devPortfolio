@@ -107,12 +107,42 @@
 }
 
 .socialicon {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 50px;
 }
+.socialicon a {
+  margin: 0 25px;
+}
+
 .socialcomponent {
   padding: 100px;
   color: white;
   background-color: rgb(236, 216, 151);
   /* background-color: rgb(217, 194, 219); */
+}
+
+.projectcomponent {
+  padding: 0px 200px;
+}
+
+.projectheader {
+  text-decoration: underline;
+}
+.projecttitle {
+  padding: 10px 0;
+}
+.introprojectparagraph {
+  padding: 50px 0;
+}
+.projectparagraph {
+  background-color: pink;
+  /* padding: 10px 100px; */
+  border: solid;
+}
+.projectsection {
+  padding: 30px 30px;
+}
+.collaborationsection {
+  padding: 30px 30px;
 }

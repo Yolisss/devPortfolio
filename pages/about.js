@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -27,6 +28,25 @@ export default function About() {
       <div>
         <Link href="/resume.pdf">Download Resume</Link>
       </div>
+      <div>
+        <h3>Certifications:</h3>
+        <h4>SheCodes: Introduction to Coding</h4>
+        <p>
+          I completed the SheCodes online course, which covered the fundamentals
+          of HTML, CSS, and JavaScript, along with practical experience in
+          creating a landing page and participating in a project showcase.
+        </p>
+        <Image
+          src="/shecodescertification.png" // Replace with the actual path and filename of your certification image
+          alt="Certification"
+          width={500} // Adjust the width and height according to your image's dimensions
+          height={300}
+        />
+      </div>
+      <h4>Landing page for SheCodes:</h4>
+      <Link href="/https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/777/058/original/FinalProject.html?1648515791">
+        Final Project
+      </Link>
     </div>
   );
 }

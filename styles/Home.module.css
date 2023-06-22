@@ -139,6 +139,9 @@
   background-color: pink;
   /* padding: 10px 100px; */
   border: solid;
+  border-radius: 10px;
+  padding: 50px;
+  /* opacity: 0.7; */
 }
 .projectsection {
   padding: 30px 30px;

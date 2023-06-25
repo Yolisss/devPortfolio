@@ -47,9 +47,29 @@ export default function About() {
           width={500} // Adjust the width and height according to your image's dimensions
           height={300}
         />
-        <h4>Landing page for SheCodes:</h4>
+        <h5>Landing page for SheCodes:</h5>
         <Image
           src="/newshecodesphoto.png" // Replace with the actual path and filename of your certification image
+          alt="Certification"
+          width={500} // Adjust the width and height according to your image's dimensions
+          height={300}
+        />
+      </div>
+      <div>
+        {" "}
+        <h4>Techtonica</h4>
+      </div>
+      <p>
+        During my tenure at Techtonica, a demanding coding bootcamp, I honed my
+        skills in the PERN stack, constructing a diverse portfolio of full-stack
+        applications, including 'Guess my number,' 'JavaSweet Cafe' (a coffee
+        application), and 'Lend A Paw' (a pet adoption application), thereby
+        gaining hands-on experience and a strong foundation in developing robust
+        and functional full-stack applications.
+      </p>
+      <div className={styles.techtonica}>
+        <Image
+          src="/techtonica.png" // Replace with the actual path and filename of your certification image
           alt="Certification"
           width={500} // Adjust the width and height according to your image's dimensions
           height={300}

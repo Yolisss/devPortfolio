@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function About() {
   return (
-    <div>
-      <div>
+    <div className={styles.aboutcomponent}>
+      <div className={styles.introprojectparagraph}>
         <p>
           Welcome! I'm thrilled to have you join me on my remarkable journey
           from customer service to the thriving world of technology. As a
@@ -26,10 +27,14 @@ export default function About() {
         </p>
       </div>
       <div>
-        <Link href="/resume.pdf">Download Resume</Link>
+        <Link className={styles.resume} href="/resume.pdf">
+          Download Resume
+        </Link>
       </div>
-      <div>
-        <h3>Certifications:</h3>
+      <div className={styles.certificationcomp}>
+        <div className={styles.certificationtitle}>
+          <h3>Certifications:</h3>
+        </div>
         <h4>SheCodes: Introduction to Coding</h4>
         <p>
           I completed the SheCodes online course, which covered the fundamentals
@@ -42,11 +47,14 @@ export default function About() {
           width={500} // Adjust the width and height according to your image's dimensions
           height={300}
         />
+        <h4>Landing page for SheCodes:</h4>
+        <Image
+          src="/newshecodesphoto.png" // Replace with the actual path and filename of your certification image
+          alt="Certification"
+          width={500} // Adjust the width and height according to your image's dimensions
+          height={300}
+        />
       </div>
-      <h4>Landing page for SheCodes:</h4>
-      <Link href="/https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/777/058/original/FinalProject.html?1648515791">
-        Final Project
-      </Link>
     </div>
   );
 }

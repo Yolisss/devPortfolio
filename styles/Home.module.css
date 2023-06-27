@@ -90,18 +90,21 @@
 }
 
 .mainnav {
+  margin-left: auto;
   justify-content: flex-end;
   padding: 50px;
   display: flex;
   flex-direction: row;
-  color: rgb(217, 194, 219);
+  color: white;
 }
 
 .mainnav li {
   /* 0 represents top and bottom; second rep left and righ */
   margin: 0 30px;
 }
-
+.generalnav {
+  display: flex;
+}
 .hometext {
   text-align: center;
 }
@@ -136,7 +139,9 @@
   padding: 50px 0;
 }
 .projectparagraph {
-  background-color: pink;
+  color: white;
+  opacity: 0.6;
+  background-color: rgb(153, 215, 212);
   /* padding: 10px 100px; */
   border: solid;
   border-radius: 10px;
@@ -155,9 +160,12 @@
   padding: 0px 200px;
 }
 .resume {
+  background-color: lightblue;
+  color: white;
   display: block;
   text-align: center;
   border: solid;
+  border-color: lightblue;
   border-radius: 10px;
   margin: 0 auto;
   padding: 10px;
@@ -173,4 +181,13 @@
 .techtonica {
   border: solid;
   color: black;
+}
+
+/* Portfolio.module.css */
+
+.portfolio-container {
+  background-image: url("/images/pastelorange.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Additional background properties can be added here */
 }

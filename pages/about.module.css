@@ -17,3 +17,17 @@
   of all the way at the top of the box */
   align-items: center;
 }
+.certificateSection {
+  display: flex;
+  align-items: center;
+}
+.certificatePicture {
+  flex-shrink: 0;
+}
+.certificateDescription {
+  padding: 0 3rem;
+}
+/* this is the "my certifications intro" */
+.introToCertificate {
+  padding: 0 3rem;
+}

@@ -1,24 +1,28 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <div>
-      <nav>
+      <nav className={styles.generalnav}>
+        <div>
+          <Image src="/Yolis.png" width={200} height={200} />
+        </div>
         <ul className={styles.mainnav}>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-          <Link href="/about">
-            <li>About</li>
-          </Link>
-          <Link href="/blog">
-            <li>Blog</li>
-          </Link>
-          <Link href="/project">
-            <li>Project</li>
-          </Link>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          {/* <li>
+            <Link href="/blog">Blog</Link>
+          </li> */}
+          <li>
+            <Link href="/project">Project</Link>
+          </li>
         </ul>
       </nav>
     </div>

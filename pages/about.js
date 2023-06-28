@@ -2,14 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./about.module.css";
-import stylesHome from "../styles/Home.module.css";
 
 import PageSection from "../components/PageSection";
 import CertificateSection from "../components/CertificateSection";
 
 export default function About() {
   return (
-    <div className={stylesHome.aboutcomponent}>
+    <div>
       <PageSection>
         <div className={styles.introduction}>
           {/* Red */}
@@ -49,12 +48,11 @@ export default function About() {
           </div>
         </div>
       </PageSection>
-      <PageSection>
+      <PageSection className={styles.sectionTwo}>
         <div className={styles.certification}>
           <div>
-            {" "}
             <Image
-              src="https://placehold.it/350x331" // Replace with the actual path and filename of your certification image
+              src="/certlogo.svg" // Replace with the actual path and filename of your certification image
               alt="Certificate Logo"
               width={350} // Adjust the width and height according to your image's dimensions
               height={331}
@@ -70,55 +68,30 @@ export default function About() {
             </p>
           </div>
         </div>
-        <CertificateSection>
-          <div className={styles.certificateSection}>
-            {/* //created a classname to target picture and use
-             flex-shrink as a way to avoid it being shrunk */}
-            <div className={styles.certificatePicture}>
-              <Image
-                src="/techtonica.png" // Replace with the actual path and filename of your certification image
-                alt="Certificate Picture"
-                width={350} // Adjust the width and height according to your image's dimensions
-                height={260}
-              />
-            </div>
-            <div className={styles.certificateDescription}>
-              <h3>Techtonica</h3>
-              <div className="mb-4">June 2023</div>
-              <p>
-                During my tenure at Techtonica, a demanding coding bootcamp, I
+        <CertificateSection
+          imageSrc="/techtonica.png"
+          imageAlt="Certificate Picture"
+          title="Techtonica"
+          date="June 2023"
+          description="During my tenure at Techtonica, a demanding coding bootcamp, I
                 honed my skills in the PERN stack, constructing a diverse
                 portfolio of full-stack applications, including 'Guess my
                 number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
                 Paw' (a pet adoption application), thereby gaining hands-on
                 experience and a strong foundation in developing robust and
-                functional full-stack applications.
-              </p>
-            </div>
-          </div>
-        </CertificateSection>
-        <CertificateSection>
-          <div className={styles.certificateSection}>
-            <div className={styles.certificatePicture}>
-              <Image
-                src="/shecodescertification.png" // Replace with the actual path and filename of your certification image
-                alt="Certificate Picture"
-                width={350} // Adjust the width and height according to your image's dimensions
-                height={260}
-              />
-            </div>
-            <div className={styles.certificateDescription}>
-              <h3>SheCodes: Introduction to Coding</h3>
-              <div className="mb-4">March 2022</div>
-              <p>
-                I completed the SheCodes online course, which covered the
+                functional full-stack applications."
+        />
+
+        <CertificateSection
+          imageSrc="/shecodescertification.png"
+          imageAlt="Certificate Picture"
+          title="SheCodes: Introduction to Coding"
+          date="March 2022"
+          description="I completed the SheCodes online course, which covered the
                 fundamentals of HTML, CSS, and JavaScript, along with practical
                 experience in creating a landing page and participating in a
-                project showcase.
-              </p>
-            </div>
-          </div>
-        </CertificateSection>
+                project showcase."
+        />
       </PageSection>
     </div>
   );

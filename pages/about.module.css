@@ -1,6 +1,7 @@
 .introduction {
   display: flex;
   align-items: center;
+  /* flex-direction: row; */
 }
 
 .profilePicture {
@@ -17,17 +18,21 @@
   of all the way at the top of the box */
   align-items: center;
 }
-.certificateSection {
-  display: flex;
-  align-items: center;
-}
-.certificatePicture {
-  flex-shrink: 0;
-}
-.certificateDescription {
-  padding: 0 3rem;
-}
+
 /* this is the "my certifications intro" */
 .introToCertificate {
   padding: 0 3rem;
+}
+.sectionTwo {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .profilePicture {
+    margin-bottom: 1rem;
+  }
 }

@@ -48,13 +48,31 @@ export default function About() {
           </div>
         </div>
       </PageSection>
-
+      <PageSection>
+        <div className={styles.certification}>
+          <div>
+            {" "}
+            <Image
+              src="https://placehold.it/200x211" // Replace with the actual path and filename of your certification image
+              alt="Profile picture"
+              width={200} // Adjust the width and height according to your image's dimensions
+              height={211}
+            />
+          </div>
+          <div>
+            <h2 className="mb-4">My certifications</h2>
+            <p>
+              As a self-taught developer, I have dedicated my time to learning
+              from different the resources available to me and have made many
+              accomplishments along the way to represent the progress of my
+              journey.
+            </p>
+          </div>
+        </div>
+      </PageSection>
       <div className={stylesHome.introprojectparagraph}></div>
       <div></div>
       <div className={stylesHome.certificationcomp}>
-        <div className={stylesHome.certificationtitle}>
-          <h3>Certifications:</h3>
-        </div>
         <h4>SheCodes: Introduction to Coding</h4>
         <p>
           I completed the SheCodes online course, which covered the fundamentals

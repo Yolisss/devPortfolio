@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import SocialMedia from "../components/SocialMedia";
-import { Playfair_Display } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const playfair_Display = Playfair_Display({
+const bodyFont = Open_Sans({
   weight: "400",
   subsets: ["latin"],
 });
@@ -11,7 +11,7 @@ const playfair_Display = Playfair_Display({
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <main className={playfair_Display.className}>
+      <main className={bodyFont.className}>
         <Navbar />
         <Component {...pageProps} />
         <SocialMedia />

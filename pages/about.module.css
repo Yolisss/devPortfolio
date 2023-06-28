@@ -1,0 +1,12 @@
+.introduction {
+  display: flex;
+  align-items: center;
+}
+
+.profilePicture {
+  flex-shrink: 0;
+}
+
+.aboutSection {
+  padding: 0 3rem;
+}

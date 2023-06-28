@@ -10,3 +10,10 @@
 .aboutSection {
   padding: 0 3rem;
 }
+.certification {
+  /* this helps items to be side by side */
+  display: flex;
+  /* certification title and paragraph is more in the center instead
+  of all the way at the top of the box */
+  align-items: center;
+}

@@ -62,6 +62,10 @@ button:hover {
 }
 
 /* these are my override */
+h2 {
+  font-size: 1.6rem;
+}
+
 h3 {
   font-size: 1.4rem;
 }

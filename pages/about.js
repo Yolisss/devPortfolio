@@ -5,6 +5,7 @@ import styles from "./about.module.css";
 import stylesHome from "../styles/Home.module.css";
 
 import PageSection from "../components/PageSection";
+import CertificateSection from "../components/CertificateSection";
 
 export default function About() {
   return (
@@ -53,13 +54,13 @@ export default function About() {
           <div>
             {" "}
             <Image
-              src="https://placehold.it/200x211" // Replace with the actual path and filename of your certification image
-              alt="Profile picture"
-              width={200} // Adjust the width and height according to your image's dimensions
-              height={211}
+              src="https://placehold.it/350x331" // Replace with the actual path and filename of your certification image
+              alt="Certificate Logo"
+              width={350} // Adjust the width and height according to your image's dimensions
+              height={331}
             />
           </div>
-          <div>
+          <div className={styles.introToCertificate}>
             <h2 className="mb-4">My certifications</h2>
             <p>
               As a self-taught developer, I have dedicated my time to learning
@@ -69,50 +70,56 @@ export default function About() {
             </p>
           </div>
         </div>
+        <CertificateSection>
+          <div className={styles.certificateSection}>
+            {/* //created a classname to target picture and use
+             flex-shrink as a way to avoid it being shrunk */}
+            <div className={styles.certificatePicture}>
+              <Image
+                src="/techtonica.png" // Replace with the actual path and filename of your certification image
+                alt="Certificate Picture"
+                width={350} // Adjust the width and height according to your image's dimensions
+                height={260}
+              />
+            </div>
+            <div className={styles.certificateDescription}>
+              <h3>Techtonica</h3>
+              <div className="mb-4">June 2023</div>
+              <p>
+                During my tenure at Techtonica, a demanding coding bootcamp, I
+                honed my skills in the PERN stack, constructing a diverse
+                portfolio of full-stack applications, including 'Guess my
+                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
+                Paw' (a pet adoption application), thereby gaining hands-on
+                experience and a strong foundation in developing robust and
+                functional full-stack applications.
+              </p>
+            </div>
+          </div>
+        </CertificateSection>
+        <CertificateSection>
+          <div className={styles.certificateSection}>
+            <div className={styles.certificatePicture}>
+              <Image
+                src="/shecodescertification.png" // Replace with the actual path and filename of your certification image
+                alt="Certificate Picture"
+                width={350} // Adjust the width and height according to your image's dimensions
+                height={260}
+              />
+            </div>
+            <div className={styles.certificateDescription}>
+              <h3>SheCodes: Introduction to Coding</h3>
+              <div className="mb-4">March 2022</div>
+              <p>
+                I completed the SheCodes online course, which covered the
+                fundamentals of HTML, CSS, and JavaScript, along with practical
+                experience in creating a landing page and participating in a
+                project showcase.
+              </p>
+            </div>
+          </div>
+        </CertificateSection>
       </PageSection>
-      <div className={stylesHome.introprojectparagraph}></div>
-      <div></div>
-      <div className={stylesHome.certificationcomp}>
-        <h4>SheCodes: Introduction to Coding</h4>
-        <p>
-          I completed the SheCodes online course, which covered the fundamentals
-          of HTML, CSS, and JavaScript, along with practical experience in
-          creating a landing page and participating in a project showcase.
-        </p>
-        <Image
-          src="/shecodescertification.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
-        />
-        <h5>Landing page for SheCodes:</h5>
-        <Image
-          src="/newshecodesphoto.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
-        />
-      </div>
-      <div>
-        {" "}
-        <h4>Techtonica</h4>
-      </div>
-      <p>
-        During my tenure at Techtonica, a demanding coding bootcamp, I honed my
-        skills in the PERN stack, constructing a diverse portfolio of full-stack
-        applications, including 'Guess my number,' 'JavaSweet Cafe' (a coffee
-        application), and 'Lend A Paw' (a pet adoption application), thereby
-        gaining hands-on experience and a strong foundation in developing robust
-        and functional full-stack applications.
-      </p>
-      <div className={stylesHome.techtonica}>
-        <Image
-          src="/techtonica.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
-        />
-      </div>
     </div>
   );
 }

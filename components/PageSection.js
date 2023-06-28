@@ -1,7 +1,7 @@
 import styles from "./PageSection.module.css";
 
-const PageSection = ({ children }) => {
-  return <div className={styles.container}>{children}</div>;
+const PageSection = ({ children, className = "" }) => {
+  return <div className={`${styles.container} ${className}`}>{children}</div>;
 };
 
 export default PageSection;

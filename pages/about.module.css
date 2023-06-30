@@ -36,3 +36,13 @@
     margin-bottom: 1rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .certification {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 668px) {
+  .introduction {
+    padding: 3rem 3rem;
+  }
+}

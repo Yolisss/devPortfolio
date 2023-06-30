@@ -49,6 +49,7 @@ button {
   font-weight: bold;
   padding: 0.5rem 2rem;
   text-decoration: none;
+  margin: 1rem 8rem 3rem;
 }
 
 .button:focus,
@@ -91,5 +92,19 @@ a:hover {
 @media screen and (max-width: 975px) {
   .container {
     width: 100%;
+  }
+  .button {
+    margin: 2rem 11rem;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  .button {
+    margin: 2rem 11rem;
+    background-color: green;
   }
 }

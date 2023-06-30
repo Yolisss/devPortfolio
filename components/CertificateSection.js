@@ -7,9 +7,10 @@ const CertificateSection = ({
   title,
   date,
   description,
+  imageFirst = true,
 }) => {
   return (
-    <div className={styles.certificateSection}>
+    <div className={styles.certificateSection} data-image-first={imageFirst}>
       {/* //created a classname to target picture and use
              flex-shrink as a way to avoid it being shrunk */}
       <div className={styles.certificatePicture}>

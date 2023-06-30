@@ -12,6 +12,11 @@
 .certification {
   padding: 3rem 4rem 1rem;
 }
+.certificateSection[data-image-first="false"] .certificatePicture {
+  /* i want to certificate pic to be in the second position */
+  order: 2;
+}
+
 @media screen and (max-width: 1200px) {
   .certificateSection {
     flex-direction: column;

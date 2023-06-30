@@ -42,9 +42,11 @@ export default function About() {
               stereotypes, challenge norms, and build a more inclusive and
               diverse tech community!
             </p>
-            <Link className="button" href="/resume.pdf">
-              See My Resume
-            </Link>
+            <div className={styles.resumediv}>
+              <Link className="button" href="/resume.pdf">
+                See My Resume
+              </Link>
+            </div>
           </div>
         </div>
       </PageSection>

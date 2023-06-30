@@ -89,22 +89,6 @@
   }
 }
 
-.mainnav {
-  margin-left: auto;
-  justify-content: flex-end;
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-  color: white;
-}
-
-.mainnav li {
-  /* 0 represents top and bottom; second rep left and righ */
-  margin: 0 30px;
-}
-.generalnav {
-  display: flex;
-}
 .hometext {
   text-align: center;
 }

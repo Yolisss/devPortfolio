@@ -30,13 +30,8 @@ export default function Project() {
           imageAlt="Project Picture"
           title="Lend A Paw"
           date="Jun 2023"
-          description="During my tenure at Techtonica, a demanding coding bootcamp, I
-                honed my skills in the PERN stack, constructing a diverse
-                portfolio of full-stack applications, including 'Guess my
-                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
-                Paw' (a pet adoption application), thereby gaining hands-on
-                experience and a strong foundation in developing robust and
-                functional full-stack applications."
+          description="Lend A Paw is a PERN stack application that supports animals through
+            adoption, volunteering, donating, fostering, and more!"
           href="https://github.com/Yolisss/Lend-A-Paw"
         />
         <CertificateSection
@@ -45,47 +40,13 @@ export default function Project() {
           imageAlt="Project Picture"
           title="JavaSweet Cafe"
           date="Dec 2022"
-          description="During my tenure at Techtonica, a demanding coding bootcamp, I
-                honed my skills in the PERN stack, constructing a diverse
-                portfolio of full-stack applications, including 'Guess my
-                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
-                Paw' (a pet adoption application), thereby gaining hands-on
-                experience and a strong foundation in developing robust and
-                functional full-stack applications."
+          description="About JavaSweet Cafe is a PERN stack application designed to allow
+            coffee lovers to create drinks in the comfort of their own home.
+            This space allows clients to document any drinks that they may
+            create on their own."
           href="https://github.com/Yolisss/2.0JSCafeProject"
         />
       </PageSection>
-      <div className={styles.projectsection}>
-        <h3 className={styles.projectheader}>Projects</h3>
-        <div className={styles.projectparagraph}>
-          <div className={styles.projecttitle}>
-            <h4>JavaSweet Cafe</h4>
-          </div>
-          <p>
-            About JavaSweet Cafe is a PERN stack application designed to allow
-            coffee lovers to create drinks in the comfort of their own home.
-            This space allows clients to document any drinks that they may
-            create on their own.
-          </p>
-          <br />
-          <a href="https://github.com/Yolisss/2.0JSCafeProject" target="_blank">
-            View Project on GitHub
-          </a>
-        </div>
-        <div className={styles.projectparagraph}>
-          <div className={styles.projecttitle}>
-            <h4>Lend A Paw</h4>
-          </div>
-          <p>
-            About Lend A Paw is an application that supports animals through
-            adoption, volunteering, donating, fostering, and more!
-          </p>
-          <br />
-          <a href="https://github.com/Yolisss/Lend-A-Paw" target="_blank">
-            View Project on GitHub
-          </a>
-        </div>
-      </div>
       <div className={styles.collaborationsection}>
         <h3 className={styles.projectheader}>Collaborations</h3>
         <div className={styles.projectparagraph}>

@@ -37,6 +37,7 @@ export default function Project() {
                 Paw' (a pet adoption application), thereby gaining hands-on
                 experience and a strong foundation in developing robust and
                 functional full-stack applications."
+          href="https://github.com/Yolisss/2.0JSCafeProject"
         />
         <CertificateSection
           imageFirst={false}
@@ -51,6 +52,7 @@ export default function Project() {
                 Paw' (a pet adoption application), thereby gaining hands-on
                 experience and a strong foundation in developing robust and
                 functional full-stack applications."
+          href=""
         />
       </PageSection>
       <div className={styles.projectsection}>

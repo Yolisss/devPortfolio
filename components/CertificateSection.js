@@ -1,5 +1,6 @@
 import styles from "./CertificateSection.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const CertificateSection = ({
   imageSrc,
@@ -8,6 +9,7 @@ const CertificateSection = ({
   date,
   description,
   imageFirst = true,
+  href,
 }) => {
   return (
     <div className={styles.certificateSection} data-image-first={imageFirst}>
@@ -27,6 +29,7 @@ const CertificateSection = ({
           <em>{date}</em>
         </div>
         <p>{description}</p>
+        <Link href={href}>View my project</Link>
       </div>
     </div>
   );

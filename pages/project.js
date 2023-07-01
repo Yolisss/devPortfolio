@@ -10,11 +10,14 @@ export default function Project() {
   return (
     <div className={styles.projectcomponent}>
       <PageSection>
+        <div className={styles.projtitle}>
+          <h1>Projects</h1>
+        </div>
         <div className={styles.introprojectparagraph}>
-          <div className={styles.projimg}>
-            <img src="projecticon.png" className={styles.projimg} />
-          </div>
           <div>
+            <img src="projecticon.png" />
+          </div>
+          <div className={styles.projparagraph}>
             <p>
               As a junior software engineer, I am steadily building my
               experience in the tech industry. What truly drives me is the
@@ -34,30 +37,33 @@ export default function Project() {
         </div>
       </PageSection>
       <PageSection>
-        <div className="mb-4">
-          <h1>Projects</h1>
-        </div>
-        <CertificateSection
-          imageSrc="/lendapawlogo.png"
-          imageAlt="Project Picture"
-          title="Lend A Paw"
-          date="Jun 2023"
-          description="Lend A Paw is a PERN stack application that supports animals through
+        <div className={styles.projcontent}>
+          <CertificateSection
+            imageSrc="/lendapawlogo.png"
+            imageAlt="Project Picture"
+            title="Lend A Paw"
+            date="Jun 2023"
+            description="Lend A Paw is a PERN stack application that supports animals through
             adoption, volunteering, donating, fostering, and more!"
-          href="https://github.com/Yolisss/Lend-A-Paw"
-        />
-        <CertificateSection
-          imageFirst={false}
-          imageSrc="/javasweetlogo.png"
-          imageAlt="Project Picture"
-          title="JavaSweet Cafe"
-          date="Dec 2022"
-          description="About JavaSweet Cafe is a PERN stack application designed to allow
+            href="https://github.com/Yolisss/Lend-A-Paw"
+          />
+        </div>
+      </PageSection>
+      <PageSection>
+        <div className={styles.projcontent}>
+          <CertificateSection
+            imageFirst={false}
+            imageSrc="/javasweetlogo.png"
+            imageAlt="Project Picture"
+            title="JavaSweet Cafe"
+            date="Dec 2022"
+            description="About JavaSweet Cafe is a PERN stack application designed to allow
             coffee lovers to create drinks in the comfort of their own home.
             This space allows clients to document any drinks that they may
             create on their own."
-          href="https://github.com/Yolisss/2.0JSCafeProject"
-        />
+            href="https://github.com/Yolisss/2.0JSCafeProject"
+          />
+        </div>
       </PageSection>
       <div className={styles.collaborationsection}>
         <h3 className={styles.projectheader}>Collaborations</h3>

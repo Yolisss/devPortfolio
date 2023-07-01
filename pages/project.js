@@ -11,7 +11,10 @@ export default function Project() {
     <div className={styles.projectcomponent}>
       <PageSection>
         <div className={styles.introprojectparagraph}>
-          <div className="mb-3">
+          <div className={styles.projimg}>
+            <img src="projecticon.png" className={styles.projimg} />
+          </div>
+          <div>
             <p>
               As a junior software engineer, I am steadily building my
               experience in the tech industry. What truly drives me is the
@@ -35,7 +38,7 @@ export default function Project() {
           <h1>Projects</h1>
         </div>
         <CertificateSection
-          imageSrc="/officiallendapawlogo.png"
+          imageSrc="/lendapawlogo.png"
           imageAlt="Project Picture"
           title="Lend A Paw"
           date="Jun 2023"

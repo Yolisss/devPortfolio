@@ -1,11 +1,13 @@
 .PageSection {
   display: flex;
   align-items: center;
-  margin: 2rem;
-  padding: 3rem;
+  margin: 3rem;
+  padding: 3rem 0;
 }
 
 .introprojectparagraph {
   padding: 2rem;
   margin: 3rem;
+  display: flex;
+  justify-content: center;
 }

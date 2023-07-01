@@ -27,9 +27,24 @@ export default function Project() {
       <PageSection>
         <CertificateSection
           imageSrc="/officiallendapawlogo.png"
-          imageAlt="Certificate Picture"
-          title="Techtonica"
-          date="June 2023"
+          imageAlt="Project Picture"
+          title="Lend A Paw"
+          date="Jun 2023"
+          description="During my tenure at Techtonica, a demanding coding bootcamp, I
+                honed my skills in the PERN stack, constructing a diverse
+                portfolio of full-stack applications, including 'Guess my
+                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
+                Paw' (a pet adoption application), thereby gaining hands-on
+                experience and a strong foundation in developing robust and
+                functional full-stack applications."
+          href="https://github.com/Yolisss/Lend-A-Paw"
+        />
+        <CertificateSection
+          imageFirst={false}
+          imageSrc="/javasweetlogo.png"
+          imageAlt="Project Picture"
+          title="JavaSweet Cafe"
+          date="Dec 2022"
           description="During my tenure at Techtonica, a demanding coding bootcamp, I
                 honed my skills in the PERN stack, constructing a diverse
                 portfolio of full-stack applications, including 'Guess my
@@ -38,21 +53,6 @@ export default function Project() {
                 experience and a strong foundation in developing robust and
                 functional full-stack applications."
           href="https://github.com/Yolisss/2.0JSCafeProject"
-        />
-        <CertificateSection
-          imageFirst={false}
-          imageSrc="/lendapaw.png"
-          imageAlt="Certificate Picture"
-          title="Techtonica"
-          date="June 2023"
-          description="During my tenure at Techtonica, a demanding coding bootcamp, I
-                honed my skills in the PERN stack, constructing a diverse
-                portfolio of full-stack applications, including 'Guess my
-                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
-                Paw' (a pet adoption application), thereby gaining hands-on
-                experience and a strong foundation in developing robust and
-                functional full-stack applications."
-          href=""
         />
       </PageSection>
       <div className={styles.projectsection}>

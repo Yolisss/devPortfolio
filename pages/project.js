@@ -1,30 +1,39 @@
 import React from "react";
 import CertificateSection from "../components/CertificateSection";
 import PageSection from "../components/PageSection";
-import ProjectSection from "../components/ProjectSection";
-import styles from "../styles/Home.module.css";
+
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./project.module.css";
 
 export default function Project() {
   return (
     <div className={styles.projectcomponent}>
       <PageSection>
-        <h1>Projects</h1>
-        <p className={styles.introprojectparagraph}>
-          As a junior software engineer, I am steadily building my experience in
-          the tech industry. What truly drives me is the opportunity to work on
-          applications that have a meaningful impact on others. Recently, I had
-          the privilege of creating two full stack apps that revolve around
-          topics close to my heart. One of them is "JavaSweet Cafe," a
-          delightful coffee app that brings together java lovers to explore and
-          savor unique brews. The other is "Lend A Paw," an adoption application
-          that connects shelter animals with loving homes. I take immense pride
-          in these projects, as they represent my dedication to merging my
-          technical skills with my passions. With every line of code, I strive
-          to improve and excel, and I am eager to continue honing my abilities
-          to contribute even more to the tech world.
-        </p>
+        <div className={styles.introprojectparagraph}>
+          <div className="mb-3">
+            <p>
+              As a junior software engineer, I am steadily building my
+              experience in the tech industry. What truly drives me is the
+              opportunity to work on applications that have a meaningful impact
+              on others. Recently, I had the privilege of creating two full
+              stack apps that revolve around topics close to my heart. One of
+              them is "JavaSweet Cafe," a delightful coffee app that brings
+              together java lovers to explore and savor unique brews. The other
+              is "Lend A Paw," an adoption application that connects shelter
+              animals with loving homes. I take immense pride in these projects,
+              as they represent my dedication to merging my technical skills
+              with my passions. With every line of code, I strive to improve and
+              excel, and I am eager to continue honing my abilities to
+              contribute even more to the tech world.
+            </p>
+          </div>
+        </div>
       </PageSection>
       <PageSection>
+        <div className="mb-4">
+          <h1>Projects</h1>
+        </div>
         <CertificateSection
           imageSrc="/officiallendapawlogo.png"
           imageAlt="Project Picture"

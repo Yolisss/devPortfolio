@@ -82,6 +82,7 @@ export default function About() {
                 Paw' (a pet adoption application), thereby gaining hands-on
                 experience and a strong foundation in developing robust and
                 functional full-stack applications."
+          href=""
         />
 
         <CertificateSection
@@ -93,6 +94,7 @@ export default function About() {
                 fundamentals of HTML, CSS, and JavaScript, along with practical
                 experience in creating a landing page and participating in a
                 project showcase."
+          href=""
         />
       </PageSection>
     </div>

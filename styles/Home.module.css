@@ -109,64 +109,6 @@
   /* background-color: rgb(217, 194, 219); */
 }
 
-.projectcomponent {
-  padding: 0px 200px;
-}
-
-.projectheader {
-  text-decoration: underline;
-}
-.projecttitle {
-  padding: 10px 0;
-}
-.introprojectparagraph {
-  padding: 50px 0;
-}
-.projectparagraph {
-  color: white;
-  opacity: 0.6;
-  background-color: rgb(153, 215, 212);
-  /* padding: 10px 100px; */
-  border: solid;
-  border-radius: 10px;
-  padding: 50px;
-  margin: 20px;
-
-  /* opacity: 0.7; */
-}
-.projectsection {
-  padding: 30px 30px;
-}
-.collaborationsection {
-  padding: 30px 30px;
-}
-.aboutcomponent {
-  padding: 0px 200px;
-}
-.resume {
-  background-color: lightblue;
-  color: white;
-  display: block;
-  text-align: center;
-  border: solid;
-  border-color: lightblue;
-  border-radius: 10px;
-  margin: 0 auto;
-  padding: 10px;
-  width: 220px;
-}
-.certificationtitle {
-  text-decoration: underline;
-  padding: 50px 0;
-}
-.certificationcomp {
-  padding: 30px 30px;
-}
-.techtonica {
-  border: solid;
-  color: black;
-}
-
 /* Portfolio.module.css */
 
 .portfolio-container {

@@ -82,12 +82,13 @@ export default function Project() {
               </div>
               <br />
               <div>
-                <a
+                <Link
+                  className="button"
                   href="https://github.com/rubycmarroquin/techtonica-time-vault/tree/master"
                   target="_blank"
                 >
                   View Project on GitHub
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -35,8 +35,6 @@ export default function Project() {
             </p>
           </div>
         </div>
-      </PageSection>
-      <PageSection>
         <div className={styles.projcontent}>
           <CertificateSection
             imageSrc="/lendapawlogo.png"
@@ -48,9 +46,7 @@ export default function Project() {
             href="https://github.com/Yolisss/Lend-A-Paw"
           />
         </div>
-      </PageSection>
-      <PageSection>
-        <div className={styles.projcontent}>
+        <div className={styles.projcontent2}>
           <CertificateSection
             imageFirst={false}
             imageSrc="/javasweetlogo.png"

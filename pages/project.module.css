@@ -53,3 +53,8 @@ button:hover {
   justify-content: center;
   padding-top: 1rem;
 }
+.staricon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}

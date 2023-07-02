@@ -63,33 +63,42 @@ export default function Project() {
       </PageSection>
       <PageSection>
         <div className={styles.collabcontent}>
-          <div>
-            <div>
-              <h3 className="mb-4">Collaborations</h3>
+          <div className={styles.staricon}>
+            <h3>Collaborations</h3>
+            <a
+              class="github-button"
+              href="https://github.com/Yolisss/LendAPaw"
+              data-color-scheme="no-preference: light; light: light; dark: light;"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star Yolisss/LendAPaw on GitHub"
+            >
+              Star
+            </a>
+          </div>
+          <div className={styles.projectparagraph}>
+            <div className={styles.projecttitle}>
+              <h4 className="mb-4">Techtonica Time Vault</h4>
             </div>
-            <div className={styles.projectparagraph}>
-              <div className={styles.projecttitle}>
-                <h4 className="mb-4">Techtonica Time Vault</h4>
-              </div>
-              <div>
-                <p>
-                  Techtonica Time Vault is a dynamic forum created by a group of
-                  developers and I, from the Techtonica program, providing a
-                  centralized platform to track progress, share solutions, and
-                  engage in collaborative discussions about all the code
-                  challenges completed throughout the program.
-                </p>
-              </div>
-              <br />
-              <div className={styles.collabdiv}>
-                <Link
-                  className={styles.button}
-                  href="https://github.com/rubycmarroquin/techtonica-time-vault/tree/master"
-                  target="_blank"
-                >
-                  View Project on GitHub
-                </Link>
-              </div>
+            <div>
+              <p>
+                Techtonica Time Vault is a dynamic forum created by a group of
+                developers and I, from the Techtonica program, providing a
+                centralized platform to track progress, share solutions, and
+                engage in collaborative discussions about all the code
+                challenges completed throughout the program.
+              </p>
+            </div>
+            <br />
+            <div className={styles.collabdiv}>
+              <Link
+                className={styles.button}
+                href="https://github.com/rubycmarroquin/techtonica-time-vault/tree/master"
+                target="_blank"
+              >
+                View Project on GitHub
+              </Link>
             </div>
           </div>
         </div>

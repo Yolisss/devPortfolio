@@ -81,9 +81,9 @@ export default function Project() {
                 </p>
               </div>
               <br />
-              <div>
+              <div className={styles.collabdiv}>
                 <Link
-                  className="button"
+                  className={styles.button}
                   href="https://github.com/rubycmarroquin/techtonica-time-vault/tree/master"
                   target="_blank"
                 >

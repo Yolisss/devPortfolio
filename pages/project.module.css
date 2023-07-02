@@ -28,5 +28,28 @@
 }
 .collabcontent {
   margin: 3rem;
-  padding: 4rem;
+  padding: 3rem;
+}
+.button {
+  background-color: #8c5f79;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+/* .button:focus,
+.button:hover, */
+/* actual button tags */
+/* button:focus,
+button:hover {
+  background-color: #785167;
+  color: #fff;
+  text-decoration: underline;
+} */
+.collabdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }

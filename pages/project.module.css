@@ -6,7 +6,7 @@
 }
 
 .introprojectparagraph {
-  padding: 0 4rem 4rem;
+  padding: 0 4rem 3rem;
   display: flex;
   justify-content: center;
 }
@@ -21,8 +21,8 @@
   justify-content: center; */
 }
 .projcontent2 {
-  margin: 0 3rem;
-  padding-left: 4rem;
+  margin: 0 3rem 0rem;
+  padding: 0 0 2rem 3rem;
   /* display: flex;
   justify-content: center; */
 }

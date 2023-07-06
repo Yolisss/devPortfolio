@@ -16,6 +16,9 @@
   /* i want to certificate pic to be in the second position */
   order: 2;
 }
+/* .description {
+  padding: ;
+} */
 
 @media screen and (max-width: 1200px) {
   .certificateSection {

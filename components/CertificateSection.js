@@ -9,7 +9,7 @@ const CertificateSection = ({
   date,
   description,
   imageFirst = true,
-  href,
+  href = "",
 }) => {
   return (
     <div className={styles.certificateSection} data-image-first={imageFirst}>
@@ -28,8 +28,8 @@ const CertificateSection = ({
         <div className="mb-4">
           <em>{date}</em>
         </div>
-        <p>{description}</p>
-        <Link href={href}>View my project</Link>
+        <p className={styles.description}>{description}</p>
+        {href === "" ? null : <Link href={href}>View my project</Link>}
       </div>
     </div>
   );

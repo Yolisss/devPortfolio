@@ -58,3 +58,13 @@ button:hover {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .introprojectparagraph {
+    flex-direction: column;
+  }
+  .img {
+    flex-shrink: 0;
+    margin: 0;
+  }
+}

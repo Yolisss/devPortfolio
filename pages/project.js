@@ -14,7 +14,7 @@ export default function Project() {
           <h1>Projects</h1>
         </div>
         <div className={styles.introprojectparagraph}>
-          <div>
+          <div className="projecticon">
             <img src="projecticon.png" />
           </div>
           <div className={styles.projparagraph}>
@@ -35,7 +35,7 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className={styles.projcontent}>
+        <div className={styles.projContent}>
           <CertificateSection
             imageSrc="/lendapawlogo.png"
             imageAlt="Project Picture"
@@ -46,7 +46,7 @@ export default function Project() {
             href="https://github.com/Yolisss/Lend-A-Paw"
           />
         </div>
-        <div className={styles.projcontent2}>
+        <div className={styles.projContent2}>
           <CertificateSection
             imageFirst={false}
             imageSrc="/javasweetlogo.png"
@@ -66,7 +66,7 @@ export default function Project() {
           <div className={styles.staricon}>
             <h3>Collaborations</h3>
             <a
-              class="github-button"
+              className="github-button"
               href="https://github.com/Yolisss/LendAPaw"
               data-color-scheme="no-preference: light; light: light; dark: light;"
               data-icon="octicon-star"

@@ -61,7 +61,7 @@ export default function About() {
             />
           </div>
           <div className={styles.introToCertificate}>
-            <h2 className="mb-4">My certifications</h2>
+            <h2 className={styles.hello}>My certifications</h2>
             <p>
               As a self-taught developer, I have dedicated my time to learning
               from different the resources available to me and have made many

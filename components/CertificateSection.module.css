@@ -20,6 +20,13 @@
   padding: ;
 } */
 
+@media screen and (max-width: 1440px) {
+  .certificateSection {
+    background-color: red;
+    padding: 40px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .certificateSection {
     flex-direction: column;

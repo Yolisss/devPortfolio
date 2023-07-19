@@ -4,10 +4,10 @@
 }
 .certificatePicture {
   flex-shrink: 0;
-  padding: 3rem 3rem;
+  padding: 0 1.5rem;
 }
 .certificateDescription {
-  padding: 0rem 3rem 1rem 0rem;
+  padding: 1.5rem;
 }
 .certification {
   padding: 3rem 4rem 1rem;
@@ -22,8 +22,8 @@
 
 @media screen and (max-width: 1440px) {
   .certificateSection {
-    background-color: red;
-    padding: 40px;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
   }
 }
 

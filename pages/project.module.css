@@ -59,6 +59,10 @@ button:hover {
   margin-bottom: 2rem;
 }
 
+.projecticon {
+  flex: 0 0 200px;
+}
+
 @media screen and (max-width: 1200px) {
   .introprojectparagraph {
     flex-direction: column;

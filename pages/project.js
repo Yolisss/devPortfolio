@@ -9,12 +9,12 @@ import styles from "./project.module.css";
 export default function Project() {
   return (
     <div className={styles.projectcomponent}>
-      <PageSection>
+      <PageSection className="my-12">
         <div className={styles.projtitle}>
           <h1>Projects</h1>
         </div>
         <div className={styles.introprojectparagraph}>
-          <div className="projecticon">
+          <div className={styles.projecticon}>
             <img src="projecticon.png" />
           </div>
           <div className={styles.projparagraph}>
@@ -35,31 +35,29 @@ export default function Project() {
             </p>
           </div>
         </div>
-        <div className={styles.projContent}>
-          <CertificateSection
-            imageSrc="/lendapawlogo.png"
-            imageAlt="Project Picture"
-            title="Lend A Paw"
-            date="Jun 2023"
-            description="Lend A Paw is a PERN stack application that supports animals through
+
+        <CertificateSection
+          imageSrc="/lendapawlogo.png"
+          imageAlt="Project Picture"
+          title="Lend A Paw"
+          date="Jun 2023"
+          description="Lend A Paw is a PERN stack application that supports animals through
             adoption, volunteering, donating, fostering, and more!"
-            href="https://github.com/Yolisss/Lend-A-Paw"
-          />
-        </div>
-        <div className={styles.projContent2}>
-          <CertificateSection
-            imageFirst={false}
-            imageSrc="/javasweetlogo.png"
-            imageAlt="Project Picture"
-            title="JavaSweet Cafe"
-            date="Dec 2022"
-            description="About JavaSweet Cafe is a PERN stack application designed to allow
+          href="https://github.com/Yolisss/Lend-A-Paw"
+        />
+
+        <CertificateSection
+          imageFirst={false}
+          imageSrc="/javasweetlogo.png"
+          imageAlt="Project Picture"
+          title="JavaSweet Cafe"
+          date="Dec 2022"
+          description="About JavaSweet Cafe is a PERN stack application designed to allow
             coffee lovers to create drinks in the comfort of their own home.
             This space allows clients to document any drinks that they may
             create on their own."
-            href="https://github.com/Yolisss/2.0JSCafeProject"
-          />
-        </div>
+          href="https://github.com/Yolisss/2.0JSCafeProject"
+        />
       </PageSection>
       <PageSection>
         <div className={styles.collabcontent}>
@@ -67,12 +65,12 @@ export default function Project() {
             <h3>Collaborations</h3>
             <a
               className="github-button"
-              href="https://github.com/Yolisss/LendAPaw"
+              href="https://github.com/rubycmarroquin/techtonica-time-vault"
               data-color-scheme="no-preference: light; light: light; dark: light;"
               data-icon="octicon-star"
               data-size="large"
               data-show-count="true"
-              aria-label="Star Yolisss/LendAPaw on GitHub"
+              aria-label="Star rubycmarroquin/techtonica-time-vault on GitHub"
             >
               Star
             </a>

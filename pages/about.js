@@ -14,7 +14,7 @@ export default function About() {
           {/* Red */}
           <div className={styles.profilePicture}>
             <Image
-              src="https://placehold.it/435x511" // Replace with the actual path and filename of your certification image
+              src="/portrait.png" // Replace with the actual path and filename of your certification image
               alt="Profile picture"
               width={435} // Adjust the width and height according to your image's dimensions
               height={511}

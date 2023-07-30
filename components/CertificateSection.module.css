@@ -1,0 +1,47 @@
+.certificateSection {
+  display: flex;
+  align-items: center;
+}
+.certificatePicture {
+  flex-shrink: 0;
+  padding: 0 1.5rem;
+}
+.certificateDescription {
+  padding: 1.5rem;
+}
+.certification {
+  padding: 3rem 4rem 1rem;
+}
+.certificateSection[data-image-first="false"] .certificatePicture {
+  /* i want to certificate pic to be in the second position */
+  order: 2;
+}
+/* .description {
+  padding: ;
+} */
+
+@media screen and (max-width: 1440px) {
+  .certificateSection {
+    padding: 0 1.5rem;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .certificateSection {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .certificateDescription {
+    /* top bottom; left right */
+    padding: 3rem 3rem;
+  }
+  .introToCertificate {
+    /* top bottom; left right */
+    padding: 1rem 3rem 3rem;
+  }
+}

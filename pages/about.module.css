@@ -1,6 +1,7 @@
 .introduction {
   display: flex;
   align-items: center;
+  /* flex-direction: row; */
 }
 
 .profilePicture {
@@ -9,4 +10,55 @@
 
 .aboutSection {
   padding: 0 3rem;
+}
+.certification {
+  /* this helps items to be side by side */
+  display: flex;
+  /* certification title and paragraph is more in the center instead
+  of all the way at the top of the box */
+  align-items: center;
+}
+
+/* this is the "my certifications intro" */
+.introToCertificate {
+  padding: 0 2rem;
+}
+.sectionTwo {
+  margin-top: 5rem;
+}
+
+.ProjectSection {
+}
+.resumediv {
+  margin: 1rem 0 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .certification {
+    padding: 2rem 5rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .profilePicture {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .certification {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 668px) {
+  .introduction {
+    padding: 3rem 3rem;
+  }
+  .aboutSection {
+    padding: 0;
+  }
 }

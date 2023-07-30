@@ -2,19 +2,19 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./about.module.css";
-import stylesHome from "../styles/Home.module.css";
 
 import PageSection from "../components/PageSection";
+import CertificateSection from "../components/CertificateSection";
 
 export default function About() {
   return (
-    <div className={stylesHome.aboutcomponent}>
+    <div>
       <PageSection>
         <div className={styles.introduction}>
           {/* Red */}
           <div className={styles.profilePicture}>
             <Image
-              src="https://placehold.it/435x511" // Replace with the actual path and filename of your certification image
+              src="/portrait.png" // Replace with the actual path and filename of your certification image
               alt="Profile picture"
               width={435} // Adjust the width and height according to your image's dimensions
               height={511}
@@ -42,59 +42,61 @@ export default function About() {
               stereotypes, challenge norms, and build a more inclusive and
               diverse tech community!
             </p>
-            <Link className="button" href="/resume.pdf">
-              See My Resume
-            </Link>
+            <div className={styles.resumediv}>
+              <Link className="button" href="/resume.pdf">
+                See My Resume
+              </Link>
+            </div>
           </div>
         </div>
       </PageSection>
-
-      <div className={stylesHome.introprojectparagraph}></div>
-      <div></div>
-      <div className={stylesHome.certificationcomp}>
-        <div className={stylesHome.certificationtitle}>
-          <h3>Certifications:</h3>
+      <PageSection className={styles.sectionTwo}>
+        <div className={styles.certification}>
+          <div>
+            <Image
+              src="/certlogo.svg" // Replace with the actual path and filename of your certification image
+              alt="Certificate Logo"
+              width={350} // Adjust the width and height according to your image's dimensions
+              height={331}
+            />
+          </div>
+          <div className={styles.introToCertificate}>
+            <h2 className={styles.hello}>My certifications</h2>
+            <p>
+              As a self-taught developer, I have dedicated my time to learning
+              from different the resources available to me and have made many
+              accomplishments along the way to represent the progress of my
+              journey.
+            </p>
+          </div>
         </div>
-        <h4>SheCodes: Introduction to Coding</h4>
-        <p>
-          I completed the SheCodes online course, which covered the fundamentals
-          of HTML, CSS, and JavaScript, along with practical experience in
-          creating a landing page and participating in a project showcase.
-        </p>
-        <Image
-          src="/shecodescertification.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
+        <CertificateSection
+          imageSrc="/techtonica.png"
+          imageAlt="Certificate Picture"
+          title="Techtonica"
+          date="June 2023"
+          description="During my tenure at Techtonica, a demanding coding bootcamp, I
+                honed my skills in the PERN stack, constructing a diverse
+                portfolio of full-stack applications, including 'Guess my
+                number,' 'JavaSweet Cafe' (a coffee application), and 'Lend A
+                Paw' (a pet adoption application), thereby gaining hands-on
+                experience and a strong foundation in developing robust and
+                functional full-stack applications."
+          href=""
         />
-        <h5>Landing page for SheCodes:</h5>
-        <Image
-          src="/newshecodesphoto.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
+
+        <CertificateSection
+          imageSrc="/shecodescertification.png"
+          imageAlt="Certificate Picture"
+          title="SheCodes: Introduction to Coding"
+          date="March 2022"
+          description="I completed the SheCodes online course, which covered the
+                fundamentals of HTML, CSS, and JavaScript, along with practical
+                experience in creating a landing page and participating in a
+                project showcase."
+          href=""
         />
-      </div>
-      <div>
-        {" "}
-        <h4>Techtonica</h4>
-      </div>
-      <p>
-        During my tenure at Techtonica, a demanding coding bootcamp, I honed my
-        skills in the PERN stack, constructing a diverse portfolio of full-stack
-        applications, including 'Guess my number,' 'JavaSweet Cafe' (a coffee
-        application), and 'Lend A Paw' (a pet adoption application), thereby
-        gaining hands-on experience and a strong foundation in developing robust
-        and functional full-stack applications.
-      </p>
-      <div className={stylesHome.techtonica}>
-        <Image
-          src="/techtonica.png" // Replace with the actual path and filename of your certification image
-          alt="Certification"
-          width={500} // Adjust the width and height according to your image's dimensions
-          height={300}
-        />
-      </div>
+      </PageSection>
     </div>
   );
 }

@@ -7,13 +7,13 @@ const SocialMedia = () => {
   return (
     <div className={styles.socialicon}>
       <a href="https://github.com/Yolisss">
-        <ImGithub size={21} />
+        <ImGithub size={25} />
       </a>
       <a href="https://www.linkedin.com/in/yolisma-zacarias4/">
-        <ImLinkedin size={21} />
+        <ImLinkedin size={25} />
       </a>
       <a href="https://twitter.com/Yolissss_">
-        <ImTwitter size={21} />
+        <ImTwitter size={25} />
       </a>
     </div>
   );

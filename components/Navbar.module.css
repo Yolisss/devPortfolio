@@ -1,0 +1,16 @@
+.mainnav {
+  margin-left: auto;
+  justify-content: flex-end;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.mainnav li {
+  /* 0 represents top and bottom; second rep left and righ */
+  margin: 0 30px;
+}
+.generalnav {
+  display: flex;
+}

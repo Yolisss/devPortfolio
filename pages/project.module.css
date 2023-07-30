@@ -1,0 +1,74 @@
+.PageSection {
+  display: flex;
+  align-items: center;
+  margin: 3rem;
+  padding: 3rem 0;
+}
+
+.introprojectparagraph {
+  padding: 0 4rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.projtitle {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+.projcontent {
+  margin: 0 3rem;
+  /* display: flex;
+  justify-content: center; */
+}
+.projcontent2 {
+  margin: 0 3rem 0rem;
+  padding: 0 0 2rem 3rem;
+  /* display: flex;
+  justify-content: center; */
+}
+.collabcontent {
+  margin: 3rem;
+  padding: 3rem;
+}
+.button {
+  background-color: #8c5f79;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+/* .button:focus,
+.button:hover, */
+/* actual button tags */
+/* button:focus,
+button:hover {
+  background-color: #785167;
+  color: #fff;
+  text-decoration: underline;
+} */
+.collabdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.staricon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.projecticon {
+  flex: 0 0 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .introprojectparagraph {
+    flex-direction: column;
+  }
+  .img {
+    flex-shrink: 0;
+    margin: 0;
+  }
+}

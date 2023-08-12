@@ -28,7 +28,9 @@ const CertificateSection = ({
         <div className="mb-4">
           <em>{date}</em>
         </div>
-        <p className={styles.description}>{description}</p>
+        <div className="mb-4">
+          <p className={styles.description}>{description}</p>
+        </div>
         {href === "" ? null : <Link href={href}>View my project</Link>}
       </div>
     </div>
